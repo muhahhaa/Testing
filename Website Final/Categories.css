@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("pixx/bgc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+    min-height: 100vh;
+}
+.navbar{
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px;   
+}
+.navbar .logo {
+    width: 200px;
+    height: 200px;
+}
+.navmenu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navmenu ul li{
+    list-style: none;
+    padding: 10px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.navmenu ul li a{
+    text-decoration: none;
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+.navmenu ul li a:hover{
+    background-color: #fc9003;
+    color: black;
+    transition: 0.3s ease;
+    border: 2px solid white;
+}
+.cont{
+    position: relative;
+    width:1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.cont .choices{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: transparent;
+    margin: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+    backdrop-filter: blur(10px);
+}
+.cont .choices:hover{
+    height: 470px;
+}
+.cont .choices .pic{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.cont .choices .pic img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+.cont .choices .info{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    letter-spacing: 2px;
+}
+.cont .choices:hover .info{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.5s ;
+}
+
